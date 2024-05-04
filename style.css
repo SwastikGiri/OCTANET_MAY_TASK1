@@ -1,0 +1,121 @@
+body{
+    box-sizing: border-box;
+    background-color: #4db91b;
+}
+
+#visual{
+    position: absolute;
+    fill: #43f018;
+    left: -180px;
+    top: -150px;
+}
+#visualcircle{
+    position: absolute;
+    fill: #43f018;
+    right: 0px;
+    bottom: 0px;
+}
+.leftbgimgitems{
+    position: absolute;
+    margin-left: 90px ;
+    margin-top: 20px;
+}
+.header{
+ display: flex;
+ padding: 10px;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 20px;
+}
+.headerlogo img{
+    height: 90px;
+}
+
+.header a{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover{
+    color: black;
+}
+.header .navbar{
+    display: flex;
+    gap: 40px;
+}
+.itemimg1{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.itemimg2{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+.itemimg3{
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+}
+.itemimg4{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+h3{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2rem;
+}
+.bowlimg1{
+    position: absolute;
+    bottom: 100px;
+    right: 105px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.bowlimg2{
+    position: absolute;
+    bottom: 100px;
+    right: 105px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.bowlimg3{
+    position: absolute;
+    bottom: 85px;
+    right: 85px;
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+}
+.bowlimg4{
+    position: absolute;
+    bottom: 100px;
+    right: 105px;
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+}
+.inactive{
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.img_animation{
+    transition: all ease-in-out 450ms;
+}
+.itemcontainer button{
+    background: none;
+    border: none;
+}
+.itemcontainer{
+    position: relative;
+    bottom: 20px;
+}
