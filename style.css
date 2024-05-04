@@ -1,49 +1,89 @@
+/* header */
 body{
     box-sizing: border-box;
     background-color: #4db91b;
 }
-
-#visual{
-    position: absolute;
-    fill: #43f018;
-    left: -180px;
-    top: -150px;
-}
-#visualcircle{
-    position: absolute;
-    fill: #43f018;
-    right: 0px;
-    bottom: 0px;
-}
-.leftbgimgitems{
-    position: absolute;
-    margin-left: 90px ;
-    margin-top: 20px;
-}
 .header{
- display: flex;
- padding: 10px;
- align-items: center;
- justify-content: space-between;
- margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
-.headerlogo img{
-    height: 90px;
+.logo1 img{
+    width: 40%;
+    height: auto;
+}
+.navbar{
+    font-size: x-large;
+    display: flex;
+    gap: 2rem;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:black;
 }
 
-.header a{
-    font-size: x-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
+#close{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+}
+#menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
     color: white;
 }
 
-.header a:hover{
-    color: black;
-}
-.header .navbar{
+
+/* home */
+
+.home{
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/* home left section */
+
+
+#visual{
+    fill: #43f018;
+    margin-top: -290px;
+    margin-left: -170px;
+}
+.content{
+    position: absolute;
+    top: 150px;
+    color: white;
+    left: 100px;
+}
+.caption{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.itemcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -270px;
+    margin-left:20px;
+    margin-right: 80px;
+}
+.itemcontainer button{
+    background: none;
+    border-radius: 100%;
+    border: none;
 }
 .itemimg1{
     width: 120px;
@@ -65,10 +105,14 @@ body{
     height: 120px;
     object-fit: contain;
 }
-h3{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 2rem;
+
+/* home right section */
+
+#visualcircle{
+    position: relative;
+    right: -50%;
+    bottom: -140px;
+    fill: #43f018;
 }
 .bowlimg1{
     position: absolute;
@@ -111,11 +155,77 @@ h3{
 .img_animation{
     transition: all ease-in-out 450ms;
 }
-.itemcontainer button{
-    background: none;
-    border: none;
+
+/* media queries for responsiveness */
+@media screen and (max-width: 1300px){
+    
 }
-.itemcontainer{
-    position: relative;
-    bottom: 20px;
+@media screen and (max-width: 786px) {
+    .navbar{
+        position: fixed;
+        top: 0; right: -105%;
+        width: 30rem;
+        background: rgba(255, 255, 255, 0.208);
+        backdrop-filter: blur(50px);
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        z-index: 1200;
+        }
+    #menu{
+        display:inline-block;
+        position: fixed;
+        right: 30px;
+    }
+    .active{
+        right: 0;
+    }
+    #close{
+        display: block;
+        /* position: fixed; */
+    }
+    .navbar a{
+        text-align: center;
+        font-size: x-large;
+    }
+    #visualcircle{
+        right: -70%;
+    }
+    .bowlimg1{
+    position: absolute;
+    bottom: -71.5%;
+    right: 10%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.bowlimg2{
+    position: absolute;
+    bottom: -71.5%;
+    right: 10%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.bowlimg3{
+    position: absolute;
+    bottom: -71.5%;
+    right: 10%;
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+}
+.bowlimg4{
+    position: absolute;
+    bottom: -71.5%;
+    right: 10%;
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+}
+.right{
+    margin-top: -40%;
+}
+    
 }

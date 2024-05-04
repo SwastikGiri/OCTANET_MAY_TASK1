@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Octanet Task 1 - Landing Page</title>
+    <title>Octanet Task 1 || Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <svg id="visual" viewBox="0 0 1280 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(707.8202328087868 664.8724952593965)"><path d="M319.9 -573.5C369.9 -525.3 334.8 -349.2 305.6 -232.2C276.4 -115.3 253.2 -57.7 257.1 2.2C261 62.2 292 124.3 283.2 175.4C274.4 226.5 225.7 266.5 171.8 269.2C118 271.9 59 237.2 -3.9 244C-66.8 250.8 -133.7 299 -234.1 323.3C-334.6 347.5 -468.7 347.8 -479.9 289.9C-491.2 232 -379.6 116 -375.4 2.4C-371.2 -111.2 -474.4 -222.3 -469.8 -291.6C-465.1 -360.9 -352.5 -388.3 -256.3 -409.7C-160 -431.1 -80 -446.6 27.5 -494.2C135 -541.8 270 -621.7 319.9 -573.5"></path></g></svg>
     <div class="header">
-        <a class="headerlogo" href="#">
-            <img src="images/smoothielogowhite.png" alt="logowhite">
-        </a>
-        <nav class="navbar">
-            <a id="link" href="#">Home</a>
-            <a id="link" href="#">Specialities</a>
-            <a id="link" href="#">About Us</a>
-            <a id="link" href="#">Contact</a>
-        </nav>
-    </div>
-    <div class="leftbgimgitems">
-        <div>
-        <img class="logoblack" src="images/smoothielogoblack.png" alt="logoblack">
-        <h3 class="caption">Smoothies are healthy, refreshing and the
-            <br>
-            perfect way to pack some extra fruit and 
-            <br>
-            veggies into your diet</h3>
+        <div class="logo1">
+            <img src="images/smoothielogowhite.png" alt="logo1">
         </div>
-        <div class="itemcontainer">
-            <button id="btn1" onclick="changeImg('btn1')"><img class="itemimg1" src="images/smoothie1.png" alt=""></button>
-            <button id="btn2" onclick="changeImg('btn2')"><img class="itemimg2" src="images/smoothie2.png" alt=""></button>
-            <button id="btn3" onclick="changeImg('btn3')"><img class="itemimg3" src="images/smoothie3.png" alt=""></button>
-            <button id="btn4" onclick="changeImg('btn4')"><img class="itemimg4" src="images/smoothie4.png" alt=""></button>
+        <div class="navbar">
+            <div id="close" class="fas fa-times"></div>
+
+            <a href="#">Home</a>
+            <a href="#">Specialities</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
         </div>
+        <div id="menu" class="fas fa-bars"></div>
     </div>
-    <svg id="visualcircle" viewBox="0 0 450 450" width="450" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(450 450)"><path d="M215 -372.3C279.9 -334.8 334.8 -279.9 372.3 -215C409.8 -150 429.9 -75 429.9 0C429.9 75 409.8 150 372.3 215C334.8 279.9 279.9 334.8 215 372.3C150 409.8 75 429.9 0 429.9C-75 429.9 -150 409.8 -215 372.3C-279.9 334.8 -334.8 279.9 -372.3 215C-409.8 150 -429.9 75 -429.9 0C-429.9 -75 -409.8 -150 -372.3 -215C-334.8 -279.9 -279.9 -334.8 -215 -372.3C-150 -409.8 -75 -429.9 0 -429.9C75 -429.9 150 -409.8 215 -372.3"></path></g></svg>
-    <div class="bowl">
-        <img class="bowlimg1 active   img_animation"  id="1" src="images/smoothie1.png" alt="smoothie1img">
-        <img class="bowlimg2 inactive img_animation"  id="2"  src="images/smoothie2.png" alt="smoothie2img">
-        <img class="bowlimg3 inactive img_animation"  id="3" src="images/smoothie3.png" alt="smoothie3img">
-        <img class="bowlimg4 inactive img_animation"  id="4" src="images/smoothie4.png" alt="smoothie4img">
-    </div>
+    
+    <!-- home  -->
+    <section class="home">
+        <div class="left">
+                <svg id="visual" viewBox="0 0 1080 1080" width="800" height="960" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(707.8202328087868 664.8724952593965)"><path d="M319.9 -573.5C369.9 -525.3 334.8 -349.2 305.6 -232.2C276.4 -115.3 253.2 -57.7 257.1 2.2C261 62.2 292 124.3 283.2 175.4C274.4 226.5 225.7 266.5 171.8 269.2C118 271.9 59 237.2 -3.9 244C-66.8 250.8 -133.7 299 -234.1 323.3C-334.6 347.5 -468.7 347.8 -479.9 289.9C-491.2 232 -379.6 116 -375.4 2.4C-371.2 -111.2 -474.4 -222.3 -469.8 -291.6C-465.1 -360.9 -352.5 -388.3 -256.3 -409.7C-160 -431.1 -80 -446.6 27.5 -494.2C135 -541.8 270 -621.7 319.9 -573.5"></path></g></svg>
+             <div class="content">
+                <img class="logo2" src="images/smoothielogoblack.png" alt="logoblack">
+                <h3 class="caption">
+                Smoothies are healthy, refreshing and
+                <br>
+                the perfect way to pack some extra
+                <br>
+                fruit and veggies into your diet</h3>
+                </div>
+                <div class="itemcontainer">
+                    <button id="btn1" onclick="changeImg('btn1')"><img class="itemimg1" src="images/smoothie1.png" alt=""></button>
+                    <button id="btn2" onclick="changeImg('btn2')"><img class="itemimg2" src="images/smoothie2.png" alt=""></button>
+                    <button id="btn3" onclick="changeImg('btn3')"><img class="itemimg3" src="images/smoothie3.png" alt=""></button>
+                    <button id="btn4" onclick="changeImg('btn4')"><img class="itemimg4" src="images/smoothie4.png" alt=""></button>
+                </div>
+            </div>
+        
+            <div class="right">
+                <svg id="visualcircle" viewBox="0 0 450 450" width="450" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(450 450)"><path d="M215 -372.3C279.9 -334.8 334.8 -279.9 372.3 -215C409.8 -150 429.9 -75 429.9 0C429.9 75 409.8 150 372.3 215C334.8 279.9 279.9 334.8 215 372.3C150 409.8 75 429.9 0 429.9C-75 429.9 -150 409.8 -215 372.3C-279.9 334.8 -334.8 279.9 -372.3 215C-409.8 150 -429.9 75 -429.9 0C-429.9 -75 -409.8 -150 -372.3 -215C-334.8 -279.9 -279.9 -334.8 -215 -372.3C-150 -409.8 -75 -429.9 0 -429.9C75 -429.9 150 -409.8 215 -372.3"></path></g></svg>
+            </div>
+            <div class="bowl">
+                <img class="bowlimg1 active   img_animation"  id="1" src="images/smoothie1.png" alt="smoothie1img">
+                <img class="bowlimg2 inactive img_animation"  id="2"  src="images/smoothie2.png" alt="smoothie2img">
+                <img class="bowlimg3 inactive img_animation"  id="3" src="images/smoothie3.png" alt="smoothie3img">
+                <img class="bowlimg4 inactive img_animation"  id="4" src="images/smoothie4.png" alt="smoothie4img">
+            </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
