@@ -194,7 +194,7 @@ body{
     }
     .bowlimg1{
     position: absolute;
-    bottom: -71.5%;
+    bottom: -105%;
     right: 10%;
     width: 500px;
     height: 500px;
@@ -202,7 +202,7 @@ body{
 }
 .bowlimg2{
     position: absolute;
-    bottom: -71.5%;
+    bottom: -105%;
     right: 10%;
     width: 500px;
     height: 500px;
@@ -210,7 +210,7 @@ body{
 }
 .bowlimg3{
     position: absolute;
-    bottom: -71.5%;
+    bottom: -105%;
     right: 10%;
     width: 520px;
     height: 520px;
@@ -218,14 +218,11 @@ body{
 }
 .bowlimg4{
     position: absolute;
-    bottom: -71.5%;
+    bottom: -105%;
     right: 10%;
     width: 480px;
     height: 480px;
     object-fit: cover;
-}
-.right{
-    margin-top: -40%;
 }
     
 }
