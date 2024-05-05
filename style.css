@@ -322,7 +322,7 @@ body{
     #menu{
         display:inline-block;
         position: fixed;
-        right: 30px;
+        right: 15px;
     }
     .active{
         right: 0;
@@ -354,12 +354,16 @@ body{
         left: -5%;
     }
     .itemcontainer{
-        top: -56.5%;
+        top: -40%;
         left: -3%;
+    }
+    .itemcontainer button{
+        margin: 10px;
+        box-shadow: 27px 33px 70px -8px rgba(0,0,0,0.72);
     }
     .itemimg{
         height: auto;
-        width: 105px;
+        width: 120px;
     }
     #visualcircle{
         right: -70%;
@@ -367,7 +371,7 @@ body{
     .bowlimg{
         box-shadow: 32px 50px 53px 0px rgba(0,0,0,0.5);
         border-radius: 100%;
-        bottom: -90%;
+        bottom: -50%;
         right: 20%;
         width: 60%;
         height: auto;
@@ -378,37 +382,6 @@ body{
     
 }
 @media screen and (max-width:640px) {
-    body{
-        overflow: visible;
-    }
-    .navbar{
-        position: fixed;
-        top: 0; right: -105%;
-        width: 30rem;
-        background: rgba(255, 255, 255, 0.208);
-        backdrop-filter: blur(50px);
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        z-index: 1200;
-        }
-    #menu{
-        display:inline-block;
-        position: fixed;
-        right: 30px;
-    }
-    .active{
-        right: 0;
-    }
-    #close{
-        display: block;
-        /* position: fixed; */
-    }
-    .navbar a{
-        text-align: center;
-        font-size: x-large;
-    }
     .left{
         width: 100%;
     }
@@ -458,36 +431,8 @@ body{
     
 }
 @media screen and (max-width: 475px) {
-    body{
-        overflow: visible;
-    }
     .navbar{
-        position: fixed;
-        top: 0; right: -105%;
         width: 20rem;
-        background: rgba(255, 255, 255, 0.208);
-        backdrop-filter: blur(50px);
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        z-index: 1200;
-        }
-    #menu{
-        display:inline-block;
-        position: fixed;
-        right: 30px;
-    }
-    .active{
-        right: 0;
-    }
-    #close{
-        display: block;
-        /* position: fixed; */
-    }
-    .navbar a{
-        text-align: center;
-        font-size: x-large;
     }
     .left{
         width: 100%;
@@ -503,10 +448,9 @@ body{
         width: 65%;
     }
     .caption{
-        width: 70%;
         font-size: 13px;
         position: relative;
-        left: -15%;
+        left: -25%;
     }
     .itemcontainer{
         display: flex;
@@ -528,13 +472,49 @@ body{
     .bowlimg{
         box-shadow: 32px 50px 53px 0px rgba(0,0,0,0.5);
         border-radius: 100%;
-        bottom: 10%;
+        bottom: -10%;
         right: 5%;
         width: 60%;
         height: auto;
     }
-    .rightsvg{
-        display: none;
+}
+@media screen and (max-width: 430px) {
+    .content{
+        top:40%;
+        left: 20%;
     }
+    .caption{
+        font-size: 13px;
+        position: relative;
+        left: -25%;
+    }
+    .itemcontainer{
+        top: -49%;
+        left: -35%;
+    }
+    .bowlimg{
+        bottom: -40%;
+    }
+
     
+}
+@media screen and (max-width: 380px) {
+    .caption{
+        font-size: 11px;
+        position: relative;
+        left: -25%;
+    }
+    .bowlimg{
+        bottom: -30%;
+    }   
+}
+@media screen and (max-width: 330px) {
+    .caption{
+        font-size: 10px;
+        position: relative;
+        left: -25%;
+    }   
+    .bowlimg{
+        bottom: -25%;
+    }   
 }
