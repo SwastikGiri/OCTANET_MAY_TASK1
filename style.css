@@ -480,11 +480,11 @@ body{
 }
 @media screen and (max-width: 430px) {
     .content{
-        top:40%;
-        left: 20%;
+        top:28%;
+        left: 22%;
     }
     .caption{
-        font-size: 13px;
+        font-size: 12px;
         position: relative;
         left: -25%;
     }
@@ -493,19 +493,21 @@ body{
         left: -35%;
     }
     .bowlimg{
-        bottom: -40%;
+        bottom: 10%;
     }
 
     
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {   .content{
+    top: 30%;
+    }
     .caption{
         font-size: 11px;
         position: relative;
         left: -25%;
     }
     .bowlimg{
-        bottom: -30%;
+        bottom:0%;
     }   
 }
 @media screen and (max-width: 330px) {
