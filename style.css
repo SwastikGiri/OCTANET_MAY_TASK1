@@ -56,17 +56,38 @@ body{
 
 /* home left section */
 
-
-#visual{
-    fill: #43f018;
-    margin-top: -290px;
-    margin-left: -170px;
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap ;
 }
+.leftsvg{
+    position: relative;
+    top: -22%;
+    left: -18%;
+}
+.left svg{
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+#visual{
+    overflow-y: hidden;
+    fill: #43f018;
+    /* margin-top: -250px; */
+    /* margin-left: -150px; */
+}
+
 .content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
     position: absolute;
-    top: 150px;
+    top: 180px;
     color: white;
-    left: 100px;
+    left: 175px;
 }
 .caption{
     font-size: x-large;
@@ -76,9 +97,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: -270px;
-    margin-left:20px;
-    margin-right: 80px;
+    top: -53%;
+    left: -9%;
 }
 .itemcontainer button{
     background: none;
@@ -189,6 +209,25 @@ body{
         text-align: center;
         font-size: x-large;
     }
+    .content{
+        top:34%;
+        left: 20%;
+    }
+    .logo2{
+        width: 80%;
+    }
+    .caption{
+        font-size: large;
+        position: relative;
+        left: -13%;;
+    }
+    .itemcontainer{
+        top: -56%;
+    }
+    .itemimg{
+        height: auto;
+        width: 90px;
+    }
     #visualcircle{
         right: -70%;
     }
@@ -199,30 +238,30 @@ body{
     width: 500px;
     height: 500px;
     object-fit: cover;
-}
-.bowlimg2{
-    position: absolute;
-    bottom: -105%;
-    right: 10%;
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-}
-.bowlimg3{
-    position: absolute;
-    bottom: -105%;
-    right: 10%;
-    width: 520px;
-    height: 520px;
-    object-fit: cover;
-}
-.bowlimg4{
-    position: absolute;
-    bottom: -105%;
-    right: 10%;
-    width: 480px;
-    height: 480px;
-    object-fit: cover;
-}
+    }
+    .bowlimg2{
+        position: absolute;
+        bottom: -105%;
+        right: 10%;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .bowlimg3{
+        position: absolute;
+        bottom: -105%;
+        right: 10%;
+        width: 520px;
+        height: 520px;
+        object-fit: cover;
+    }
+    .bowlimg4{
+        position: absolute;
+        bottom: -105%;
+        right: 10%;
+        width: 480px;
+        height: 480px;
+        object-fit: cover;
+    }
     
 }
